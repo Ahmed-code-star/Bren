@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bren للتوريدات - حلول توريدات متطورة</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide"></script>
+    <style>
+        /* Custom font for a modern look - Inter is a good choice for Arabic as well */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            /* Enhanced gradient background from light blue to white */
+            background: linear-gradient(135deg, #e0f2fe 0%, #ffffff 50%, #f0f9ff 100%); /* Softer, richer blues */
+            color: #1a202c; /* Dark text for contrast */
+        }
+
+        /* Custom animations for better appearance */
+        @keyframes fadeInScale {
+            from { opacity: 0; transform: scale(0.95) translateY(20px); }
+            to { opacity: 1; transform: scale(1) translateY(0); }
+        }
+        @keyframes slideInFromRight {
+            from { opacity: 0; transform: translateX(50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes slideInFromLeft {
+            from { opacity: 0; transform: translateX(-50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        .animate-fadeInScale { animation: fadeInScale 0.8s ease-out forwards; }
+        .animate-slideInFromRight { animation: slideInFromRight 0.8s ease-out forwards; }
+        .animate-slideInFromLeft { animation: slideInFromLeft 0.8s ease-out forwards; }
+
+        /* Delay animations for a staggered effect */
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center p-4">
+
+    <!-- Main Container - Larger, more prominent shadow -->
+    <div class="bg-white shadow-2xl shadow-blue-200 rounded-3xl p-8 md:p-14 max-w-5xl w-full text-center border border-blue-100 transform transition-all duration-500 animate-fadeInScale">
+
+        <!-- Company Header - Hero Section -->
+        <header class="mb-12">
+            <h1 class="text-6xl md:text-7xl font-extrabold text-blue-900 mb-5 leading-tight animate-fadeInScale delay-100">
+                Bren للتوريدات
+            </h1>
+            <p class="text-2xl md:text-3xl text-blue-700 font-light leading-relaxed animate-fadeInScale delay-200">
+                شريككم الرائد في حلول التوريدات الصناعية المتخصصة
+            </p>
+        </header>
+
+        <!-- Contact Information Section - More refined layout -->
+        <section class="mb-12 bg-blue-50 p-8 rounded-2xl shadow-inner border border-blue-100 animate-slideInFromLeft">
+            <h2 class="text-4xl font-bold text-blue-800 mb-6 border-b-2 border-blue-200 pb-3">تواصل معنا</h2>
+            <div class="flex flex-col md:flex-row items-center justify-center space-y-6 md:space-y-0 md:space-x-12 rtl:space-x-reverse">
+                <!-- Phone Number -->
+                <div class="flex items-center text-blue-800 text-xl md:text-2xl hover:text-blue-900 transition-colors duration-300">
+                    <i data-lucide="phone" class="h-10 w-10 ml-4 text-blue-600"></i>
+                    <a href="tel:+201010629007" class="font-bold">01010629007</a>
+                </div>
+                <!-- Facebook Link -->
+                <div class="flex items-center text-blue-800 text-xl md:text-2xl hover:text-blue-900 transition-colors duration-300">
+                    <i data-lucide="facebook" class="h-10 w-10 ml-4 text-blue-600"></i>
+                    <a href="https://www.facebook.com/share/1GH9iHREif/" target="_blank" rel="noopener noreferrer" class="font-bold">
+                        صفحتنا على فيسبوك
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section - Enhanced cards with icons -->
+        <section class="mb-12 animate-slideInFromRight">
+            <h2 class="text-4xl font-bold text-blue-800 mb-8 border-b-2 border-blue-200 pb-3">خدماتنا المتخصصة</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1: Toktok Starter Winding -->
+                <div class="bg-blue-50 p-8 rounded-2xl shadow-lg border border-blue-200 hover:shadow-xl hover:shadow-blue-300 transition-all duration-300 transform hover:-translate-y-2 flex flex-col items-center animate-fadeInScale delay-300">
+                    <i data-lucide="cog" class="h-16 w-16 text-blue-600 mb-5"></i>
+                    <h3 class="text-2xl font-extrabold text-blue-800 mb-3">لف مارش توك توك</h3>
+                    <p class="text-blue-700 leading-relaxed">
+                        خدمة متخصصة ودقيقة لضمان أفضل أداء واستمرارية لمارش التوك توك الخاص بك.
+                    </p>
+                </div>
+                <!-- Service 2: Charging Coil -->
+                <div class="bg-blue-50 p-8 rounded-2xl shadow-lg border border-blue-200 hover:shadow-xl hover:shadow-blue-300 transition-all duration-300 transform hover:-translate-y-2 flex flex-col items-center animate-fadeInScale delay-400">
+                    <i data-lucide="zap" class="h-16 w-16 text-blue-600 mb-5"></i>
+                    <h3 class="text-2xl font-extrabold text-blue-800 mb-3">ملف شحن</h3>
+                    <p class="text-blue-700 leading-relaxed">
+                        توفير ملفات شحن عالية الجودة وموثوقة، تضمن كفاءة شحن مثالية واستقراراً كهربائياً.
+                    </p>
+                </div>
+                <!-- Service 3: Wiper Coil -->
+                <div class="bg-blue-50 p-8 rounded-2xl shadow-lg border border-blue-200 hover:shadow-xl hover:shadow-blue-300 transition-all duration-300 transform hover:-translate-y-2 flex flex-col items-center animate-fadeInScale delay-500">
+                    <i data-lucide="wind" class="h-16 w-16 text-blue-600 mb-5"></i>
+                    <h3 class="text-2xl font-extrabold text-blue-800 mb-3">موبينة مساحة</h3>
+                    <p class="text-blue-700 leading-relaxed">
+                        تقديم حلول موبينة المساحة لضمان رؤية واضحة وآمنة في جميع الظروف الجوية.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action/Closing - More prominent button -->
+        <footer class="mt-12 bg-blue-50 p-8 rounded-2xl shadow-inner border border-blue-100 animate-fadeInScale delay-600">
+            <p class="text-2xl text-blue-800 font-semibold mb-6">دع خبرتنا تخدم احتياجاتك. اتصل بنا اليوم!</p>
+            <a href="tel:+201010629007" class="inline-flex items-center bg-blue-700 hover:bg-blue-800 text-white font-bold py-4 px-10 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 text-xl ring-4 ring-blue-300 ring-opacity-50">
+                <i data-lucide="phone-call" class="h-7 w-7 mr-3"></i>
+                اتصل بنا الآن!
+            </a>
+        </footer>
+    </div>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
+
